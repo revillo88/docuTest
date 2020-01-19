@@ -1,1 +1,92 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <!--
+    <link rel="stylesheet" href="//unpkg.com/docsify/themes/dark.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  -->
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+
+</head>
+
+
+<body>
+  <div id="app"></div>
+
+  <script>
+    window.$docsify = {
+
+
+    	loadSidebar: true,
+    	loadSidebar: '_sidebar.md',
+
+    	coverpage: true,
+    	homepage: 'home.md',
+    	// Scrolle zum Anfang der Seite, wenn die Route gewechselt wird.
+    	auto2top: false,
+      // Verhindere die Umwandlung in Emoji:
+      noEmoji: false,
+
+      executeScript: true,
+
+      autoHeader: true,
+
+    	maxLevel: 5,
+
+    	disqus: 'Revillo',
+
+    	loadNavbar: true,
+
+      loadNavbar: '_navbar.md',
+
+      name: 'Dev Informationen',
+      repo: ''    ,
+
+      search : [
+        '/',            // => /README.md
+        '/home',
+        '/info',
+        '/typeScriptClass',      // => /zh-cn/README.md
+        '/error',
+      ],
+    
+
+      search: {
+            placeholder: 'Suchen',
+            //search: 'auto',
+            noData: 'Keine Ergebnisse',
+            paths: this.search,
+      },
+
+  }    
+  </script>
+
+  <script src="//unpkg.com/docsify/lib/plugins/external-script.min.js">
+  </script>
+
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.min.js"></script>
+
+
+  <!-- Seitenumbrüche -->
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+<!-- Search -->
+  <script src="https://unpkg.com/docsify/lib/plugins/search.js"></script>
+
+
+<script src="//unpkg.com/prismjs/components/prism-typescript.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-java.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-java.min.js"></script>
+  
+</body>
+</html>
